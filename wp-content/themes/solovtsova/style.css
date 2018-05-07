@@ -3,3 +3,10 @@ Theme Name: Kosmetolog
 Author: Andrew Mende
 Version: 0.0.1
 */
+#blackline {
+	color: #ffffff;
+	text-align: right;
+	background-color: #2e1300;
+	height: 24px; 
+	font-size: 80%;
+}
