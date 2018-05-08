@@ -1,12 +1,70 @@
 /*
-Theme Name: Kosmetolog
+Theme Name: Solovtsova
 Author: Andrew Mende
 Version: 0.0.1
 */
+
+@font-face {
+  font-family: 'Avanti';
+  src: url('/wp-content/themes/solovtsova/fonts/avanti_regular.woff') format('woff'),
+  url('/wp-content/themes/solovtsova/fonts/avanti_regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Annabelle';
+  src: url('/wp-content/themes/solovtsova/fonts/annabelle.woff') format('woff'),
+  url('/wp-content/themes/solovtsova/fonts/annabelle.ttf') format('truetype');
+} 
+
+body {
+	font-family: 'Avanti';	
+}
+
+h1 {
+	font-family: 'Annabelle';
+	margin-top: 2rem;
+}
+
 #blackline {
-	color: #ffffff;
+	width: 100%;
+	height: 30px;
+	padding-top: 5px;
 	text-align: right;
 	background-color: #2e1300;
-	height: 24px; 
-	font-size: 80%;
+}
+
+#blackline a {
+	color: #ffffff;
+}
+
+.titles-group {
+	display: inline-block;
+}
+
+.site-title {
+	display: inline-block;
+	font-size: 3em;
+	margin-bottom: -20px;
+}
+
+.site-title a {
+	color: #c89a60;
+}
+
+.site-subtitle {
+	font-family: 'Avanti';
+	font-size: medium;
+	color: #c89a60;
+	text-align: right;
+}
+
+#navigation {
+	width: 100%;
+	background-color: #f7ce98;
+}
+
+h1.title-secondpart {
+	margin-top: -.5rem;
+	margin-bottom: 1rem;
+	text-align: right;
 }
