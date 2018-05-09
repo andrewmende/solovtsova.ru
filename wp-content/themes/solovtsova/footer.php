@@ -19,12 +19,10 @@
 		</div>
 	</div>
 	<div id="blackline">
-		<div class="container">
 			<div class="row">
 				<div id="blackline">
 				</div>
 			</div>
-		</div>
 	</div>
 </div> <!-- #content -->
 

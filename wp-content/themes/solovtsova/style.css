@@ -84,3 +84,15 @@ h1.title-secondpart {
 #footer {
 	background-color: #e3e3e3
 }
+#footer_menu {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#footer_menu a {
+	color: #220e00;
+}
+#procs {
+	background-color: #fee8cb;
+	color: #220e00;
+	border-radius: 10px;
+}
