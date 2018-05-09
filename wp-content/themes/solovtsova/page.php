@@ -15,7 +15,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area container">
 		<div id="main" class="site-main row" role="main">
-			<div class="col-md-3">
+			<div id="procs" class="col-md-3">
 				<h3>Процедуры</h3>
 				<?php wp_nav_menu( array( 'menu' => 9 ) ); ?>
 			</div>
