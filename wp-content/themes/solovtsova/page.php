@@ -32,7 +32,9 @@ get_header(); ?>
 				?>
 			</div>
 			<div class="col-md-3">
-				<h3>Проблемы</h3>
+				<div class="portrait">
+					&nbsp;
+				</div>
 			</div>
 
 		</div><!-- .site-main -->
