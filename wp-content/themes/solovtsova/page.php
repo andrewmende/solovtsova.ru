@@ -15,9 +15,12 @@ get_header(); ?>
 
 	<div id="primary" class="content-area container">
 		<div id="main" class="site-main row" role="main">
-			<div id="procs" class="col-md-3">
-				<h3>Процедуры</h3>
-				<?php wp_nav_menu( array( 'menu' => 9 ) ); ?>
+			<div class="col-md-3">
+				<div class="sidebarprocedures-wrapper">
+					<h3 class="sidebarprocedures-title">Процедуры</h3>
+					<hr class="sidebarprocedures-hr">
+					<?php wp_nav_menu( array( 'theme_location' => 'sidebarprocedures' ) ); ?>
+				</div>
 			</div>
 			<div class="col-md-6">
 				<?php
