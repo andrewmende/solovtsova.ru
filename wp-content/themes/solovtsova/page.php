@@ -18,7 +18,7 @@ get_header(); ?>
 			<div class="col-md-3">
 				<div class="sidebarprocedures-wrapper">
 					<h3 class="sidebarprocedures-title">Процедуры</h3>
-					<hr class="sidebarprocedures-hr">
+					<hr class="sidebarprocedures-hr" />
 					<?php wp_nav_menu( array( 'theme_location' => 'sidebarprocedures' ) ); ?>
 				</div>
 			</div>

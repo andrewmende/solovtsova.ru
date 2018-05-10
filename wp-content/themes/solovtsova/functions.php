@@ -9,6 +9,7 @@ function custom_navigation_menus() {
 	$locations = array(
 		'mainnavigation' => 'Horizontal main menu',
 		'sidebarprocedures' => 'Left side menu of procedures',
+		'sidebarproblems' => 'Left side menu of problems'
 	);
 	register_nav_menus( $locations );
 
