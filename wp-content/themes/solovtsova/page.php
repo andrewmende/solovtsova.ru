@@ -16,10 +16,15 @@ get_header(); ?>
 	<div id="primary" class="content-area container">
 		<div id="main" class="site-main row" role="main">
 			<div class="col-md-3">
-				<div class="sidebarprocedures-wrapper">
+				<div class="sidebarprocedures-wrapper sidebar-wrapper">
 					<h3 class="sidebarprocedures-title">Процедуры</h3>
-					<hr class="sidebarprocedures-hr" />
+					<hr class="sidebarprocedures-hr sidebar-hr" />
 					<?php wp_nav_menu( array( 'theme_location' => 'sidebarprocedures' ) ); ?>
+				</div>
+				<div class="sidebarproblems-wrapper sidebar-wrapper">
+					<h3 class="sidebarproblems-title">Проблемы</h3>
+					<hr class="sidebarproblems-hr sidebar-hr" />
+					<?php wp_nav_menu( array( 'theme_location' => 'sidebarproblems' ) ); ?>
 				</div>
 			</div>
 			<div class="col-md-9">

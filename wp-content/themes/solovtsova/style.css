@@ -119,25 +119,32 @@ h1.title-secondpart {
 	color: #220e00;
 }
 
-.sidebarprocedures-wrapper {
+.sidebar-wrapper {
 	margin-top: 2rem;
-	background-color: #fee8cb;
 	width: 95%;
 	border-radius: 10px;
 	padding: 15px;
 	color: #2a1100;
 }
 
-.sidebarprocedures-wrapper a {
+.sidebarprocedures-wrapper {
+	background-color: #fee8cb;
+}
+
+.sidebarproblems-wrapper {
+	background-color: #e3e0e1;
+}
+
+.sidebar-wrapper a {
 	color: #2a1100;
 }
 
-.sidebarprocedures-hr {
+.sidebar-hr {
     border-top: 2px solid #2a1100;
     margin: 0px -15px;
 }
 
-#menu-procedures {
+#menu-procedures, #menu-problems {
 	font-size: 15px;
 	list-style-type: none;
 	padding: 0px;
@@ -145,7 +152,7 @@ h1.title-secondpart {
     margin-bottom: 0;
 }
 
-#menu-procedures li {
+#menu-procedures li, #menu-problems li {
 	text-transform: uppercase;
 	line-height: 1.5rem;
 }
