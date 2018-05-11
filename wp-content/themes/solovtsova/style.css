@@ -66,6 +66,11 @@ h3 {
 
 .mainmenu {
 	background-color: #f7ce98;
+	background-image: url(/wp-content/themes/solovtsova/img/gradient.png);
+    background-size: contain;
+    background-repeat: repeat-y;
+    padding-bottom: .2rem;
+	padding-top: .5rem;
 }
 
 .navbar-nav {
@@ -77,8 +82,12 @@ h3 {
 .navbar-nav .nav-link {
 	text-transform: uppercase;
 	color: #2a1100;
-	padding-right: 1.5rem!important;
-	padding-left: 1.5rem!important;
+	padding-right: 2rem!important;
+	padding-left: 2rem!important;
+	padding-bottom: 0;
+	padding-top: 0;
+	line-height: 1rem;
+	font-size: .9rem;
 }
 
 h1.title-secondpart {

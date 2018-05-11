@@ -22,7 +22,7 @@ get_header(); ?>
 					<?php wp_nav_menu( array( 'theme_location' => 'sidebarprocedures' ) ); ?>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-9">
 				<?php
 				// Start the loop.
 				while ( have_posts() ) : the_post();
@@ -34,12 +34,6 @@ get_header(); ?>
 				endwhile;
 				?>
 			</div>
-			<div class="col-md-3">
-				<div class="portrait">
-					&nbsp;
-				</div>
-			</div>
-
 		</div><!-- .site-main -->
 	</div><!-- .content-area -->
 
