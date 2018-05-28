@@ -17,7 +17,9 @@ Version: 0.0.1
 } 
 
 body {
-	font-family: 'Avanti';	
+	font-family: 'Avanti';
+	line-height: 1.3rem;
+	font-size: 0.95rem;
 }
 
 h1 {
@@ -76,14 +78,14 @@ h3 {
 .navbar-nav {
 	width: 100%;
 	justify-content: flex-end;
-	margin-right: 100px;
+	margin-right: 50px;
 }
 
 .navbar-nav .nav-link {
 	text-transform: uppercase;
 	color: #2a1100;
-	padding-right: 2rem!important;
-	padding-left: 2rem!important;
+	padding-right: 1.2rem!important;
+	padding-left: 1.2rem!important;
 	padding-bottom: 0;
 	padding-top: 0;
 	line-height: 1rem;
@@ -100,12 +102,12 @@ h1.title-secondpart {
 .portrait {
 	background-image: url("/wp-content/themes/solovtsova/img/portrait.png");
 	background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    background-size: 100%;
-    width: 150%;
-    margin-left: -50px;
-    margin-top: -40px;
+	background-position: left;
+	height: 100%;
+	background-size: 110%;
+	width: 150%;
+	margin-left: -50px;
+	margin-top: 20px;
 }
 
 #footer {
