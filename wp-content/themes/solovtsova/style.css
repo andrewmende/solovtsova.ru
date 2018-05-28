@@ -158,3 +158,16 @@ h1.title-secondpart {
 	text-transform: uppercase;
 	line-height: 1.5rem;
 }
+#onroll { 
+    background-image: url(/wp-content/themes/solovtsova/img/gradient.png);
+    border: none;
+    color: #2a1100;
+    padding: 15px;
+    padding-bottom: 10px;
+    border-style: outset;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 15px;
+    font-size: 20px;
+}
+#actions
