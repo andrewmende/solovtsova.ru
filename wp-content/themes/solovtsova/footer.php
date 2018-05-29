@@ -1,15 +1,23 @@
 	<hr />
 <div id="footer" role="contentinfo">
-	<!-- If you'd like to support WordPress, having the "powered by" link somewhere on your blog is the best way; it's our only promotion or advertising. -->
-	<div id=navigation>
+	<nav class="navbar navbar-expand-md mainmenu" role="navigation">
 		<div class="container">
-			<div class="row">
-				<div id="navigation">
-					Меню    |    Обо мне    |    Итд
-				</div>
-			</div>
-		</div>	
-	</div>
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<?php wp_nav_menu( array(
+				'theme_location'  => 'mainnavigation',
+				'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
+				'container'       => 'div',
+				'container_class' => 'collapse navbar-collapse',
+				'container_id'    => 'bs-example-navbar-collapse-1',
+				'menu_class'      => 'navbar-nav',
+				'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+				'walker'          => new WP_Bootstrap_Navwalker(),
+			) ); ?>
+		</div>
+	</nav>
 	<div class="container">
 		<div class="row">
 			<div id="footer_menu" class="col-md-3 offset-md-6">

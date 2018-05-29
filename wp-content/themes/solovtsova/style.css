@@ -158,8 +158,11 @@ h1.title-secondpart {
 	text-transform: uppercase;
 	line-height: 1.5rem;
 }
-#onroll { 
+
+.action_button { 
     background-image: url(/wp-content/themes/solovtsova/img/gradient.png);
+    background-size: contain;
+    background-repeat: repeat-y;
     border: none;
     color: #2a1100;
     padding: 15px;
@@ -170,4 +173,7 @@ h1.title-secondpart {
     border-radius: 15px;
     font-size: 20px;
 }
-#actions
+
+.action {
+	margin-top: 5em;
+}

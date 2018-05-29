@@ -38,6 +38,27 @@ get_header(); ?>
 				// End the loop.
 				endwhile;
 				?>
+
+				<div class="procedure-gallery">
+					<center><h1>Процедуры</h1></center>
+					<?php
+					// Filter through all pages and find Portfolio's children
+					$services_children = get_children(array(
+					   'numberposts' => 3,
+					   'post_parent' => 113
+					   ));
+					//echo '<pre>'; var_dump($services_children);
+					
+					// echo what we get back from WP to the browser
+					foreach($services_children as $item) {
+					    echo $item->post_title;
+				
+
+					    // to know what's in $item
+					    //echo '<pre>'; var_dump($item);
+					}
+					?>
+				</div>
 			</div>
 		</div><!-- .site-main -->
 	</div><!-- .content-area -->
