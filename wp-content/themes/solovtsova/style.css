@@ -182,3 +182,22 @@ h1.title-secondpart {
 .action {
 	margin-top: 5em;
 }
+.service_block {
+	border-radius: 20px;
+	height: 175px;
+	text-align: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+.service_block-title {
+	position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(/wp-content/themes/solovtsova/img/gradient.png);
+    background-size: contain;
+    background-repeat: repeat-y;
+    width: 100%;
+    opacity: 0.8;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}

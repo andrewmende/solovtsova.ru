@@ -15,5 +15,5 @@ function custom_navigation_menus() {
 
 }
 add_action( 'init', 'custom_navigation_menus' );
-
+add_theme_support( 'post-thumbnails' ); 
 ?>
