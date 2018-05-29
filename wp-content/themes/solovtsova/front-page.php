@@ -21,8 +21,13 @@ get_header(); ?>
 					<hr class="sidebarprocedures-hr sidebar-hr" />
 					<?php wp_nav_menu( array( 'theme_location' => 'sidebarprocedures' ) ); ?>
 				</div>
+				<div class="sidebarproblems-wrapper sidebar-wrapper">
+					<h3 class="sidebarproblems-title">Проблемы</h3>
+					<hr class="sidebarproblems-hr sidebar-hr" />
+					<?php wp_nav_menu( array( 'theme_location' => 'sidebarproblems' ) ); ?>
+				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-9">
 				<?php
 				// Start the loop.
 				while ( have_posts() ) : the_post();
@@ -33,34 +38,25 @@ get_header(); ?>
 				// End the loop.
 				endwhile;
 				?>
-
-				<?php   if ( is_page(1277) ) { ?>
-					<div class="procedure-gallery">
-						<center><h1>Услуги</h1></center>
-						<?php
-						// Filter through all pages and find Portfolio's children
-						$services_children = get_children(array(
-						   'post_parent' => 113
-						   ));
-						echo '<pre>'; var_dump($services_children);
-						
-						// echo what we get back from WP to the browser
-						//foreach($services_children as $item) {
-						//    echo $item->post_title;
+				<div class="procedure-gallery">
+					<center><h1>Процедуры</h1></center>
+					<?php
+					// Filter through all pages and find Portfolio's children
+					$services_children = get_children(array(
+					   'numberposts' => 3,
+					   'post_parent' => 113
+					   ));
+					//echo '<pre>'; var_dump($services_children);
 					
+					// echo what we get back from WP to the browser
+					foreach($services_children as $item) {
+					    echo $item->post_title;
+				
 
-						    // to know what's in $item
-						    //echo '<pre>'; var_dump($item);
-						//}
-						?>
-					</div>
-				<?php } ?>
-			</div>
-			<div class="col-md-3">
-				<div class="sidebarproblems-wrapper sidebar-wrapper">
-					<h3 class="sidebarproblems-title">Проблемы</h3>
-					<hr class="sidebarproblems-hr sidebar-hr" />
-					<?php wp_nav_menu( array( 'theme_location' => 'sidebarproblems' ) ); ?>
+					    // to know what's in $item
+					    //echo '<pre>'; var_dump($item);
+					}
+					?>
 				</div>
 			</div>
 		</div><!-- .site-main -->
