@@ -1,4 +1,3 @@
-	<hr />
 <div id="footer" role="contentinfo">
 	<nav class="navbar navbar-expand-md mainmenu" role="navigation">
 		<div class="container">
