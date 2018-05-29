@@ -65,17 +65,28 @@ get_header(); ?>
 						$services_children = get_children(array(
 						   'post_parent' => 113
 						   ));
-						echo '<pre>'; var_dump($services_children);
+						//echo '<pre>'; var_dump($services_children);
 						
-						// echo what we get back from WP to the browser
-						//foreach($services_children as $item) {
-						//    echo $item->post_title;
-					
-
-						    // to know what's in $item
-						    //echo '<pre>'; var_dump($item);
-						//}
-						?>
+						// echo what we get back from WP to the browser?>
+						<div class="container">
+							<div class="row"><?php
+							foreach($services_children as $item) { ?>
+							    <div class="service_block col-md-4" style="background-image: url(<?php echo get_the_post_thumbnail_url( $item->ID, 'thumbnail' );?>);">
+							    	<div class="service_block-title">	
+								    	<?php
+								    	echo $item->post_title;
+								    	//echo get_the_post_thumbnail_url( $item->ID, 'thumbnail' );
+								    	?>
+								    </div>
+							    </div>
+						
+							    <?php
+							    // to know what's in $item
+							    //echo '<pre>'; var_dump($item);
+							}
+							?>
+							</div>
+						</div>
 					</div>
 				<?php } ?>
 			</div>
