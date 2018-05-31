@@ -71,15 +71,18 @@ get_header(); ?>
 						<div class="container">
 							<div class="row"><?php
 							foreach($services_children as $item) { ?>
-							    <div class="service_block col-md-4" style="background-image: url(<?php echo get_the_post_thumbnail_url( $item->ID, 'thumbnail' );?>);">
-							    	<div class="service_block-title">	
-								    	<?php
-								    	echo $item->post_title;
-								    	//echo get_the_post_thumbnail_url( $item->ID, 'thumbnail' );
-								    	?>
-								    </div>
-							    </div>
-						
+								<div class="service_block-container col-md-4 col-6">    
+								    <a href="<?php echo $item->guid;?>" class="service_block-link">
+									    <div class="service_block" style="background-image: url(<?php echo get_the_post_thumbnail_url( $item->ID, 'thumbnail' );?>);">
+									    	<div class="service_block-title">	
+										    	<?php
+										    	echo $item->post_title;
+										    	//echo get_the_post_thumbnail_url( $item->ID, 'thumbnail' );
+										    	?>
+										    </div>
+									    </div>
+									</a>
+								</div>
 							    <?php
 							    // to know what's in $item
 							    //echo '<pre>'; var_dump($item);

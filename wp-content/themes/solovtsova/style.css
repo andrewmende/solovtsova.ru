@@ -182,13 +182,25 @@ h1.title-secondpart {
 .action {
 	margin-top: 5em;
 }
+
+.service_block-container {
+	margin-bottom: 2rem;
+}
+
+.service_block-link {
+	color: #000;
+}
+
 .service_block {
 	border-radius: 20px;
-	height: 175px;
+	height: 150px;
 	text-align: center;
 	background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
+
+
 .service_block-title {
 	position: absolute;
     top: 50%; left: 50%;
