@@ -21,8 +21,13 @@ get_header(); ?>
 					<hr class="sidebarprocedures-hr sidebar-hr" />
 					<?php wp_nav_menu( array( 'theme_location' => 'sidebarprocedures' ) ); ?>
 				</div>
+				<div class="sidebarproblems-wrapper sidebar-wrapper">
+					<h3 class="sidebarproblems-title">Проблемы</h3>
+					<hr class="sidebarproblems-hr sidebar-hr" />
+					<?php wp_nav_menu( array( 'theme_location' => 'sidebarproblems' ) ); ?>
+				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-9">
 				<?php
 				// Start the loop.
 				while ( have_posts() ) : the_post();
@@ -92,13 +97,6 @@ get_header(); ?>
 						</div>
 					</div>
 				<?php } ?>
-			</div>
-			<div class="col-md-3">
-				<div class="sidebarproblems-wrapper sidebar-wrapper">
-					<h3 class="sidebarproblems-title">Проблемы</h3>
-					<hr class="sidebarproblems-hr sidebar-hr" />
-					<?php wp_nav_menu( array( 'theme_location' => 'sidebarproblems' ) ); ?>
-				</div>
 			</div>
 		</div><!-- .site-main -->
 	</div><!-- .content-area -->
