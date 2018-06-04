@@ -63,17 +63,17 @@ get_header(); ?>
 				<?php } ?>
 
 				<?php   if ( is_page(1277) ) { ?>
-					<div class="procedure-gallery">
-						<center><h1>Услуги</h1></center>
+					<div>
 						<?php
 						// Filter through all pages and find Portfolio's children
 						$services_children = get_children(array(
-						   'post_parent' => 113
+						   'post_parent' => 113, 
+						   'post_type'      => 'page'
 						   ));
 						//echo '<pre>'; var_dump($services_children);
 						
 						// echo what we get back from WP to the browser?>
-						<div class="container">
+						<div class="container service-gallery">
 							<div class="row"><?php
 							foreach($services_children as $item) { ?>
 								<div class="service_block-container col-md-4 col-6">    

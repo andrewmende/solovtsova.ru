@@ -128,6 +128,7 @@ h1.title-secondpart {
 
 .sidebar-wrapper {
 	margin-top: 2rem;
+	margin-bottom: 2rem;
 	width: 95%;
 	border-radius: 10px;
 	padding: 15px;
@@ -181,6 +182,10 @@ h1.title-secondpart {
 
 .action {
 	margin-top: 5em;
+}
+
+.service-gallery {
+	margin-top: 2rem;
 }
 
 .service_block-container {

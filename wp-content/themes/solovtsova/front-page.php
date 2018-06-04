@@ -40,23 +40,40 @@ get_header(); ?>
 				?>
 				<div class="procedure-gallery">
 					<center><h1>Процедуры</h1></center>
-					<?php
-					// Filter through all pages and find services's children
-					$services_children = get_children(array(
-					   'numberposts' => 3,
-					   'post_parent' => 113
-					   ));
-					//echo '<pre>'; var_dump($services_children);
-					
-					// echo what we get back from WP to the browser
-					foreach($services_children as $item) {
-					    echo $item->post_title;
-				
-
-					    // to know what's in $item
-					    //echo '<pre>'; var_dump($item);
-					}
-					?>
+					<div>
+						<?php
+						// Filter through all pages and find Portfolio's children
+						$services_children = get_children(array(
+						   'post_parent' => 113, 
+						   'post_type'      => 'page',
+						   'numberposts' => 3,
+						   ));
+						//echo '<pre>'; var_dump($services_children);
+						
+						// echo what we get back from WP to the browser?>
+						<div class="container service-gallery">
+							<div class="row"><?php
+							foreach($services_children as $item) { ?>
+								<div class="service_block-container col-md-4 col-6">    
+								    <a href="<?php echo get_permalink($item->ID);?>" class="service_block-link">
+									    <div class="service_block" style="background-image: url(<?php echo get_the_post_thumbnail_url( $item->ID, 'thumbnail' );?>);">
+									    	<div class="service_block-title">	
+										    	<?php
+										    	echo $item->post_title;
+										    	//echo get_the_post_thumbnail_url( $item->ID, 'thumbnail' );
+										    	?>
+										    </div>
+									    </div>
+									</a>
+								</div>
+							    <?php
+							    // to know what's in $item
+							    //echo '<pre>'; var_dump($item);
+							}
+							?>
+							</div>
+						</div>
+					</div>
 				</div> <!-- .procedure-gallery -->
 			</div><!-- column -->  
 		</div><!-- .site-main -->
