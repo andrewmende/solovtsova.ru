@@ -56,14 +56,16 @@ get_header(); ?>
 							foreach($services_children as $item) { ?>
 								<div class="service_block-container col-md-4 col-6">    
 								    <a href="<?php echo get_permalink($item->ID);?>" class="service_block-link">
-									    <div class="service_block" style="background-image: url(<?php echo get_the_post_thumbnail_url( $item->ID, 'thumbnail' );?>);">
+										<div class="service_block"> 
 									    	<div class="service_block-title">	
 										    	<?php
 										    	echo $item->post_title;
 										    	//echo get_the_post_thumbnail_url( $item->ID, 'thumbnail' );
 										    	?>
+										    </div>										   
+										    <div class="service_block-background" style="background-image: url(<?php echo get_the_post_thumbnail_url( $item->ID, 'thumbnail' );?>);">
 										    </div>
-									    </div>
+										</div>
 									</a>
 								</div>
 							    <?php
