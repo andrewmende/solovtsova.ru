@@ -214,10 +214,6 @@ h1.page_title-secondpart {
 	text-align: center;
 }
 
-.service_table {
-	width: 100%;
-}
-
 .service_block-background {
 	border-radius: 20px;
 	height: 230px;
@@ -250,11 +246,29 @@ h1.page_title-secondpart {
     z-index: 1;
 }
 
-.service_table-price, .service_table-name {
+.service_table-price, .service_table-name, .service_table-header {
 	background-color: #f4eee5;
 	border: 2px solid #b7966b;
+	height: 2.5rem;
 }
-.service-table-header {
-	background-color: #f4eee5;
-	border: 2px solid #b7966b;
+
+.service_table {
+	width: 100%;
+	margin-top: -2px;
+}
+
+.service_table-name {
+	padding-left: 1rem;
+}
+
+.service_table-price {
+	width: 20%;
+	text-align: center;
+}
+
+.service_table-header {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	height: 3rem;
 }
