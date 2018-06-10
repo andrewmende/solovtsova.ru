@@ -41,6 +41,7 @@ h3 {
 a:hover {
 	color: #000;
 }
+&nbsp;
 
 #blackline {
 	width: 100%;
@@ -213,6 +214,9 @@ h1.page_title-secondpart {
 	text-align: center;
 }
 
+.service_table {
+	width: 100%;
+}
 
 .service_block-background {
 	border-radius: 20px;
@@ -244,4 +248,13 @@ h1.page_title-secondpart {
     padding-bottom: 6%;
     text-transform: uppercase;
     z-index: 1;
+}
+
+.service_table-price, .service_table-name {
+	background-color: #f4eee5;
+	border: 2px solid #b7966b;
+}
+.service-table-header {
+	background-color: #f4eee5;
+	border: 2px solid #b7966b;
 }
