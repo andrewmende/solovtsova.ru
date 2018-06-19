@@ -61,19 +61,25 @@ a:hover {
 
 .site-title {
 	display: inline-block;
-	font-size: 3em;
+	font-size: 4em;
 	margin-bottom: -20px;
+	margin-top: 0px;
 }
 
 .site-title a {
 	color: #c89a60;
 }
 
+.site-title a:hover {
+	text-decoration: none;
+}
+
 .site-subtitle {
 	font-family: 'Avanti';
-	font-size: medium;
 	color: #c89a60;
+	font-size: 1.3em;
 	text-align: right;
+	margin-top: 5px;
 }
 
 .mainmenu {
