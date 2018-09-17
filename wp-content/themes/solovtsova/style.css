@@ -248,6 +248,8 @@ h1.page_title-secondpart {
     opacity: 0.8;
     padding-top: 6%;
     padding-bottom: 6%;
+    padding-left: 15px;
+    padding-right: 15px;
     text-transform: uppercase;
     z-index: 1;
 }
